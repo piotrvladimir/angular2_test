@@ -35,4 +35,7 @@ export class AppComponent {
   onKey(event: KeyboardEvent) { // with type info
     this.values += (<HTMLInputElement>event.target).value + ' | ';
   }
+
+  value = '';
+  update(value: string) { this.value = value; }
 }

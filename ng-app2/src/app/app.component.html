@@ -11,3 +11,12 @@
 
 <input (keyup)="onKey($event)">
   <p>{{values}}</p>
+
+  <input #box (keyup.enter)="0">
+    <p>{{box.value}}</p>
+
+    <input #box1
+      (keyup.enter)="update(box1.value)"
+      (blur)="update(box1.value)">
+
+    <p>{{value}}</p>
